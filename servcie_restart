@@ -1,0 +1,6 @@
+#!/bin/bash
+
+service_name="nginx_service"
+#Restart a specified service
+sudo systemctl restart "$service_name"
+echo "Service $service_name Restarted."

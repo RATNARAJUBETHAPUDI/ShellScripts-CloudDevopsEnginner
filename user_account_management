@@ -1,0 +1,10 @@
+#!/bin/bash
+
+username="newuser"
+#check if user exits; if not, create new user
+if id $username" &>dev/null; then
+   echo "User $username already exits."
+else
+    useradd -m "$username"
+    echo "User $username created."
+fi

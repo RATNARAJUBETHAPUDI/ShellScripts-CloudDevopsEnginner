@@ -1,0 +1,5 @@
+#!/bin/bash
+outputfile="cpu_usage_log.txt
+#Log current cpu usage to a file with timestamp
+echo "$(date) $(top -bn1 | grep 'Cpu(s)' | awk '{print $2}' | cut -d.m-f1)%" >> "$output_file"
+echo "CPU usage logged."

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+database_name="roboshop_database"
+output_file="database_backup_$(date +%Y%m%d).sql"
+
+#perform s=databse backup using mysqldump
+mysqldump -u username -ppassword "database_name" > "$output_file"
+echo 'Database backup created:$output_file"

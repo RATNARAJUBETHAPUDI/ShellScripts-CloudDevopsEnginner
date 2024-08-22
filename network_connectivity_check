@@ -1,0 +1,8 @@
+#!/bin/bash
+host="ROBOSHOP.COM"
+#check network connectivity by pinging a host
+if ping -c 1 "$host" &>/dev/null; then
+   echo "network is up."
+else
+  echo "network is down."
+fi
